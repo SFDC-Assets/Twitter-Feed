@@ -6,12 +6,9 @@ private without sharing class TwitterFeedTest {
         Test.startTest();
         Account acc = new Account(Name = 'John', AccountNumber = 'salesforce');
         insert acc;
-        Id accId = acc.Id;
         String url = TwitterFeed.getCommunityURL();
-        String goodName = TwitterFeed.getTwitterScreenName(accId, 'Account', 'AccountNumber');
-        String badName = TwitterFeed.getTwitterScreenName(accId, 'Account', 'John__c');
-        System.assertEquals(goodName, 'salesforce');
-        System.assertEquals(badName, null);
+        System.assertEquals(TwitterFeed.getTwitterScreenName(acc.Id, 'Account', 'AccountNumber'), 'salesforce');
+        System.assertEquals(TwitterFeed.getTwitterScreenName(acc.Id, 'Account', 'John__c'), null);
         Test.stopTest();
     }
 }
