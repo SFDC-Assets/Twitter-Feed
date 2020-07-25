@@ -1,0 +1,31 @@
+<!--
+    Visualforce page to hold the actual Twitter timeline. We need this since locker service does not allow us
+    to run the widgets.js code, even in a static resource.
+-->
+
+<apex:page showHeader="false" sidebar="false" applyBodyTag="false" applyHtmlTag="false" lightningStylesheets="true">
+        
+    <a class="twitter-timeline" 
+        href="https://twitter.com/{!$CurrentPage.parameters.screenname}"
+        data-theme="{!$CurrentPage.parameters.theme}"
+        data-chrome="noheader nofooter noborders" />
+
+        <script>
+            window.twttr = (function(d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0],
+                    t = window.twttr || {};
+                if (d.getElementById(id)) return t;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = "https://platform.twitter.com/widgets.js";
+                fjs.parentNode.insertBefore(js, fjs);
+          
+                t._e = [];
+                t.ready = function(f) {
+                    t._e.push(f);
+                };
+          
+                return t;
+            } (document, "script", "twitter-wjs"));
+        </script>    
+</apex:page>

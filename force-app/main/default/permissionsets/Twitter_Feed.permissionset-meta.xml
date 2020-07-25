@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <classAccesses>
+        <apexClass>GetCommunityURL</apexClass>
+        <enabled>true</enabled>
+    </classAccesses>
+    <description>Allows access to Twitter Feed Lightning component&apos;s Visualforce pages.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Twitter Feed</label>
+    <pageAccesses>
+        <apexPage>TwitterFeed</apexPage>
+        <enabled>true</enabled>
+    </pageAccesses>
+</PermissionSet>
