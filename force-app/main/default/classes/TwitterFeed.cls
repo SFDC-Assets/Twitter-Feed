@@ -1,4 +1,4 @@
-public without sharing class GetCommunityURL {
+public without sharing class TwitterFeed {
 
     @AuraEnabled(cacheable=true)
     public static String getCommunityURL () {
