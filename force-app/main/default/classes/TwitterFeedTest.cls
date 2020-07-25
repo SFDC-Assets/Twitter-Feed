@@ -4,7 +4,7 @@ private without sharing class TwitterFeedTest {
     @isTest
     static void runTests () {
         Test.startTest();
-        Account acc = new Account(Name = 'Good', AccountNumber = 'salesforce');
+        Account acc = new Account(Name = 'John', AccountNumber = 'salesforce');
         insert acc;
         Id accId = acc.Id;
         String url = TwitterFeed.getCommunityURL();
