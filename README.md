@@ -3,12 +3,14 @@
 
 <h1 align="center">TWITTER FEED</h1>
 <p align="center">
-This package contains a Lightning component, VisualForce page, and other support to embed a Twitter feed in a Salesforce record page.
+This package contains a Lightning component, VisualForce page, and other support to embed a Twitter feed in a Salesforce Lightning record page.
 </p>
 
 ## Summary
 
  This component can be used in a home page, an app page, a record page, or a community page and is smart enough to recognize which type of page it is in. In most of these pages, you will need to supply a Twitter screen name, or "handle", to the component to tell it which Twitter feed to display.
+ 
+ ![Twitter Feed](/images/TwitterFeed.png)
  
  In the case of a record page, the component will require the API name of a field in the record that contains the Twitter screen name. This can be useful, for example, in a Contact or Account record to display the feed for that person or account.
 
@@ -33,10 +35,6 @@ To allow access to the feed component, you will need to assign the permission se
 I am a pre-sales Solutions Engineer for [Salesforce](https://www.salesforce.com) and I develop solutions for my customers to demonstrate the capabilities of the amazing Salesforce platform. *This package represents functionality that I have used for demonstration purposes  and the content herein is definitely not ready for actual production use; specifically, it has not been tested extensively nor has it been written with security and access controls in mind. By installing this package, you assume all risk for any consequences and agree not to hold me or my company liable.*  If you are OK with that ...
 
 [Install the Package](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t2E000003obuMQAQ)
-
-## Release History
-
-- 1.0 (2020-07-25): New component.
 
 ## Maintainer
 
