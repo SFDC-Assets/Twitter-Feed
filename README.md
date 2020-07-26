@@ -1,4 +1,4 @@
-![Creative Commons License](https://img.shields.io/badge/license-Creative%20Commons-success) ![In Development](https://img.shields.io/badge/status-In%20Development-yellow) ![Code Coverage](https://img.shields.io/badge/code%20coverage-100%25-green)
+![Creative Commons License](https://img.shields.io/badge/license-Creative%20Commons-success) ![In Development](https://img.shields.io/badge/status-Released-green) ![Code Coverage](https://img.shields.io/badge/code%20coverage-100%25-green)
 
 
 <h1 align="center">TWITTER FEED</h1>
