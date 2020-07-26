@@ -16,13 +16,15 @@ This package contains a Lightning component, VisualForce page, and other support
 
  You can also manage the height of the component, the title of the Lightning card, and the theme ("light" or "dark").
 
+ ![App Builder](/images/TwitterFeedAppBuilder.png)
+
 ## Installation and Setup
 
-Installation is easy: just read the disclaimer below and click on the **Install the Package** link to install the components of the unlocked package. Simply create an app page using Lightning App Builder and drag the component onto the page where you would like it. From there, you will need to configure the screen name, height of the component on the page, and theme.
+Installation is easy: just read the disclaimer below and click on the **Install the Package** link to install the components of the unlocked package. Simply create a Lightning app, home, or record page using Lightning App Builder and drag the component onto the page where you would like it. From there, you will need to configure the screen name, title, height of the component on the page, and theme.
 
 To allow access to the feed component, you will need to assign the permission set `Twitter Feed` to anyone who will be using it. The permission set grants access to the `TwitterFeed` Visualforce page and the `TwitterFeed` Apex class.
 
-**IMPORTANT**: If you intend to use this component in an unauthenticated community, you will need to grant these accesses manually:
+**IMPORTANT**: This component recognizes when it is being used in a community page. If you intend to use this component in an unauthenticated community, you will need to grant these accesses manually:
 - From Setup, go to "All Communities" and click on your community.
 - Bring up the Builder tab and click on Settings -> General and select the "Public Access" checkbox.
 - Bring up the Administration tab and click on the "Pages" tab.
@@ -34,7 +36,7 @@ To allow access to the feed component, you will need to assign the permission se
 
 I am a pre-sales Solutions Engineer for [Salesforce](https://www.salesforce.com) and I develop solutions for my customers to demonstrate the capabilities of the amazing Salesforce platform. *This package represents functionality that I have used for demonstration purposes  and the content herein is definitely not ready for actual production use; specifically, it has not been tested extensively nor has it been written with security and access controls in mind. By installing this package, you assume all risk for any consequences and agree not to hold me or my company liable.*  If you are OK with that ...
 
-[Install the Package](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t2E000003obvAQAQ)
+[Install the Package](https://login.salesforce.com/packaging/installPackage.apexp?p0=04t2E000003obvFQAQ)
 
 ## Maintainer
 

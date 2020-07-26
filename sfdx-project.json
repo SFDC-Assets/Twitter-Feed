@@ -4,8 +4,8 @@
             "path": "force-app",
             "default": true,
             "package": "Twitter Feed",
-            "versionName": "Version 1.1",
-            "versionNumber": "1.1.0.NEXT"
+            "versionName": "Version 1.2",
+            "versionNumber": "1.2.0.NEXT"
         }
     ],
     "namespace": "",
@@ -14,6 +14,7 @@
     "packageAliases": {
         "Twitter Feed": "0Ho2E000000007HSAQ",
         "Twitter Feed@1.0.0-1": "04t2E000003obv5QAA",
-        "Twitter Feed@1.1.0-1": "04t2E000003obvAQAQ"
+        "Twitter Feed@1.1.0-1": "04t2E000003obvAQAQ",
+        "Twitter Feed@1.2.0-1": "04t2E000003obvFQAQ"
     }
 }

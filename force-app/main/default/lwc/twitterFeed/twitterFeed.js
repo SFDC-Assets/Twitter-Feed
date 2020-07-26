@@ -23,13 +23,13 @@ export default class TwitterFeed extends LightningElement {
 				recordId: this.recordId,
 				objectApiName: this.objectApiName,
 				fieldApiName: this.fieldApiName
-			}).then((result) => {
-				this.screenName = result === null || result === "" ? "salesforce" : result;
-				getCommunityUrl().then((result) => {
-					// We could be on a record page in a community. If not in a community, the getCommunityUrl() will just return "".
-					this.twitterVfUrl = `${result}/apex/TwitterFeed?screenname=${this.screenName}?theme=${this.theme}`;
+			}).then((twitterHandle) => {
+				this.screenName = twitterHandle === null || twitterHandle === "" ? "salesforce" : twitterHandle;
+				getCommunityUrl().then((baseUrl) => {
+					// We could be on a record page in a community. If not in a community, then getCommunityUrl() will just return "".
+					this.twitterVfUrl = `${baseUrl}/apex/TwitterFeed?screenname=${this.screenName}?theme=${this.theme}`;
 				});
-				if (result === null)
+				if (twitterHandle === null)
 					this.dispatchEvent(
 						new ShowToastEvent({
 							title: "Twitter Feed",
@@ -40,9 +40,9 @@ export default class TwitterFeed extends LightningElement {
 					);
 			});
 		} else {
-			// Not on a record page. If not in a community, the getCommunityUrl() will just return "".
-			getCommunityUrl().then((result) => {
-				this.twitterVfUrl = `${result}/apex/TwitterFeed?screenname=${this.screenName}?theme=${this.theme}`;
+			// Not on a record page. If not in a community, then getCommunityUrl() will just return "".
+			getCommunityUrl().then((baseUrl) => {
+				this.twitterVfUrl = `${baseUrl}/apex/TwitterFeed?screenname=${this.screenName}?theme=${this.theme}`;
 			});
 		}
 	}
