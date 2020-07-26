@@ -16,11 +16,11 @@ This package contains a Lightning component, VisualForce page, and other support
 
  You can also manage the height of the component, the title of the Lightning card, and the theme ("light" or "dark").
 
- ![App Builder](/images/TwitterFeedAppBuilder.png)
-
 ## Installation and Setup
 
 Installation is easy: just read the disclaimer below and click on the **Install the Package** link to install the components of the unlocked package. Simply create a Lightning app, home, or record page using Lightning App Builder and drag the component onto the page where you would like it. From there, you will need to configure the screen name, title, height of the component on the page, and theme.
+
+![App Builder](/images/TwitterFeedAppBuilder.png)
 
 To allow access to the feed component, you will need to assign the permission set `Twitter Feed` to anyone who will be using it. The permission set grants access to the `TwitterFeed` Visualforce page and the `TwitterFeed` Apex class.
 
