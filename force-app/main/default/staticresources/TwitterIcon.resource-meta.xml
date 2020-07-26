@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StaticResource xmlns="http://soap.sforce.com/2006/04/metadata">
+    <cacheControl>Public</cacheControl>
+    <contentType>image/svg+xml</contentType>
+    <description>SVG file containing the Twitter logo that appears on the Lightning card used by the Twitter Feed Lightning component bundle.</description>
+</StaticResource>

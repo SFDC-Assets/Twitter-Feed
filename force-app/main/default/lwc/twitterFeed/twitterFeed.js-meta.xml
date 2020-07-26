@@ -15,7 +15,7 @@
         <targetConfig targets="lightning__AppPage">
             <property name="screenName" label="Screen Name" type="String" default="salesforce" description="The Twitter screen name to display" required="true" />
             <property name="cardTitle" label="Card Title" type="String" default="Twitter Feed" description="The title to be used at the top of the card" />
-            <property name="height" label="Height" type="Integer" default="500" description="The height (in pixels) of the feed" />
+            <property name="height" label="Height" type="Integer" default="500" min="200" description="The height (in pixels) of the feed" />
             <property name="theme" label="Theme" type="String" datasource="light,dark" default="light" description="The theme (light or dark) of the timeline" />
             <supportedFormFactors>
                 <supportedFormFactor type="Large" />
@@ -25,7 +25,7 @@
         <targetConfig targets="lightning__HomePage">
             <property name="screenName" label="Screen Name" type="String" default="salesforce" description="The Twitter screen name to display" required="true" />
             <property name="cardTitle" label="Card Title" type="String" default="Twitter Feed" description="The title to be used at the top of the card" />
-            <property name="height" label="Height" type="Integer" default="500" description="The height (in pixels) of the feed" />
+            <property name="height" label="Height" type="Integer" default="500" min="200" description="The height (in pixels) of the feed" />
             <property name="theme" label="Theme" type="String" datasource="light,dark" default="light" description="The theme (light or dark) of the timeline" />
             <supportedFormFactors>
                 <supportedFormFactor type="Large" />
@@ -35,7 +35,7 @@
         <targetConfig targets="lightning__RecordPage">
             <property name="fieldApiName" label="API Name of Twitter Handle Field" type="String" default="Twitter_Field__c" description="The API Name of the field in this object that contains the Twitter screen name to display (do not include the '@')" required="true" />
             <property name="cardTitle" label="Card Title" type="String" default="Twitter Feed" description="The title to be used at the top of the card" />
-            <property name="height" label="Height" type="Integer" default="500" description="The height (in pixels) of the feed" />
+            <property name="height" label="Height" type="Integer" default="500" min="200" description="The height (in pixels) of the feed" />
             <property name="theme" label="Theme" type="String" datasource="light,dark" default="light" description="The theme (light or dark) of the timeline" />
             <supportedFormFactors>
                 <supportedFormFactor type="Large" />
@@ -45,7 +45,7 @@
         <targetConfig targets="lightningCommunity__Default">
             <property name="screenName" label="Screen Name" type="String" default="salesforce" description="The Twitter screen name to display" required="true" />
             <property name="cardTitle" label="Card Title" type="String" default="Twitter Feed" description="The title to be used at the top of the card" />
-            <property name="height" label="Height" type="Integer" default="500" description="The height (in pixels) of the feed" />
+            <property name="height" label="Height" type="Integer" default="500" min="200" description="The height (in pixels) of the feed" />
             <property name="theme" label="Theme" type="String" datasource="light,dark" default="light" description="The theme (light or dark) of the timeline" />
         </targetConfig>
     </targetConfigs>

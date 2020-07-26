@@ -1,5 +1,9 @@
 .twitter-frame {
     width: 100%;
-    border: 0;
-    overflow: hidden;
+    border: 0px;
+}
+.twitter-logo {
+    height: 1.5rem;
+    width: 1.5rem;
+    display: inline-block; 
 }

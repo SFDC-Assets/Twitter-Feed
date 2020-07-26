@@ -1,8 +1,15 @@
 <template>
-	<lightning-card icon-name="standard:social">
-		<span slot="title">
-			<h2><strong>{cardTitle}</strong></h2>
-		</span>
+	<lightning-card>
+		<lightning-layout slot="title" vertical-align="center">
+			<lightning-layout-item size="1">
+				<svg class="twitter-logo" xmlns="http://www.w3.org/2000/svg">
+					<use xlink:href={twitterLogoUrl}></use>
+				</svg>
+			</lightning-layout-item>
+			<lightning-layout-item size="11">
+				<h2><strong>{cardTitle}</strong></h2>
+			</lightning-layout-item>
+		</lightning-layout>
 		<section class="slds-p-around_medium">
 			<iframe class="twitter-frame" src={twitterVfUrl} height={height}></iframe>
 		</section>

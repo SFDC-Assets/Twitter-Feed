@@ -1,5 +1,6 @@
 import { LightningElement, api } from "lwc";
 import { ShowToastEvent } from "lightning/platformShowToastEvent";
+import TwitterIcon from "@salesforce/resourceUrl/TwitterIcon";
 import getCommunityUrl from "@salesforce/apex/TwitterFeed.getCommunityURL";
 import getTwitterScreenName from "@salesforce/apex/TwitterFeed.getTwitterScreenName";
 
@@ -11,7 +12,9 @@ export default class TwitterFeed extends LightningElement {
 	@api recordId;
 	@api objectApiName;
 	@api fieldApiName;
+
 	twitterVfUrl = "";
+	twitterLogoUrl = TwitterIcon + "#logo";
 
 	renderedCallback() {
 		// See if we are on a record page ...
