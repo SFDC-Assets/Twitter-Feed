@@ -5,4 +5,5 @@ sfdx force:package:version:create \
     --wait 10 \
     --package "Twitter Feed" \
     --path "force-app" \
+    --codecoverage \
     --targetdevhubusername "MyComponents"

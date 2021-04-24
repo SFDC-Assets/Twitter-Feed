@@ -37,6 +37,7 @@
             <property name="cardTitle" label="Card Title" type="String" default="Twitter Feed" description="The title to be used at the top of the card" />
             <property name="height" label="Height" type="Integer" default="500" min="200" description="The height (in pixels) of the feed" />
             <property name="theme" label="Theme" type="String" datasource="light,dark" default="light" description="The theme (light or dark) of the timeline" />
+            <property name="hideComponentOnError" label="Hide Component on Error" type="Boolean" default="false" description="If checked, hide the component if no handle is present; otherwise, show an error toast." />
             <supportedFormFactors>
                 <supportedFormFactor type="Large" />
                 <supportedFormFactor type="Small" />

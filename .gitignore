@@ -1,4 +1,3 @@
-/.sfdx/orgs/**
 /.prettierrc
 **/.prettierignore
 **/.DS_Store
@@ -7,4 +6,8 @@
 /.uncrustify.cfg.swp
 /.sfdx/tools/**
 /.sfdx/typings/**
-/.sfdx/sfdx-config.json
+/.sfdx/indexes/**
+/.sfdx/orgs/**
+/typings/**
+/package-lock.json
+/node_modules/**

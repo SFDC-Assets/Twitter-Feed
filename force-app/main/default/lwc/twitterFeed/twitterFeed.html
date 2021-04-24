@@ -1,17 +1,19 @@
 <template>
-	<lightning-card>
-		<header slot="title" class="slds-media slds-media_center">
-			<div class="slds-media__figure slds-icon_container">
-				<svg class="slds-icon slds-icon_small" xmlns="http://www.w3.org/2000/svg">
-					<use xlink:href={twitterLogoUrl}></use>
-				</svg>
-			</div>
-			<div class="slds-media__body">
-				<h2><strong>{cardTitle}</strong></h2>
-			</div>
-		</header>
-		<section class="slds-var-p-vertical_xx-small slds-var-p-horizontal_medium">
-			<iframe class="slds-size_12-of-12 twitter-frame" src={twitterVfUrl} height={height}></iframe>
-		</section>
-	</lightning-card>
+	<template if:false={hideComponent}>
+		<lightning-card>
+			<header slot="title" class="slds-media slds-media_center">
+				<div class="slds-media__figure slds-icon_container">
+					<svg class="slds-icon slds-icon_small" xmlns="http://www.w3.org/2000/svg">
+						<use xlink:href={twitterLogoUrl}></use>
+					</svg>
+				</div>
+				<div class="slds-media__body">
+					<h2><strong>{cardTitle}</strong></h2>
+				</div>
+			</header>
+			<section class="slds-var-p-vertical_xx-small slds-var-p-horizontal_medium">
+				<iframe class="slds-size_12-of-12 twitter-frame" src={twitterVfUrl} height={height}></iframe>
+			</section>
+		</lightning-card>
+	</template>
 </template>

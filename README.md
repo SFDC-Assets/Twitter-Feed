@@ -41,3 +41,5 @@ I am a pre-sales Solutions Engineer for [Salesforce](https://www.salesforce.com)
 ## Maintainer
 
 [John Meyer / johnsfdemo](https://github.com/johnsfdemo)
+
+**Current Version**: 1.5
